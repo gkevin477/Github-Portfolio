@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kevin Gomez | Portfolio</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Gomez | Gameplay Programmer</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#101114;color:#fff;scroll-behavior:smooth}
-nav{position:sticky;top:0;background:#0b0c0e;padding:16px 8%;display:flex;justify-content:space-between;align-items:center}
-nav a{color:#fff;text-decoration:none;margin-left:18px}nav a:hover,.accent{color:#00b4ff}
-header{padding:80px 8%;background:linear-gradient(135deg,#1d2733,#111)}
-.btn{display:inline-block;background:#00b4ff;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;margin:8px 8px 0 0}
-section{padding:60px 8%}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card,.project{background:#1b1f28;padding:24px;border-radius:10px}.project{border-left:4px solid #00b4ff}
-footer{text-align:center;padding:30px;background:#0b0c0e;color:#aaa}
-</style></head><body>
-<nav><div class="accent"><b>Kevin Gomez</b></div><div>
-<a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
-<header><h1>Kevin Gomez</h1><h2 class="accent">Gameplay Programmer • Unreal Engine Developer</h2>
-<p>Bachelor's in Game Development (3.88 GPA) with experience in gameplay programming, AI, animation, modeling, rigging, and combat systems.</p>
-<a class="btn" href="#projects">Projects</a>
-<a class="btn" href="Resume_Kevin_Gomez.pdf" download>Download Résumé (PDF)</a>
-</header>
-<section id="education"><h2 class="accent">Education</h2><div class="grid">
-<div class="card"><h3>Full Sail University</h3><p><b>Bachelor's in Game Development</b><br>Aug 2024 – Jul 2026<br>GPA: 3.88</p></div>
-<div class="card"><h3>Texas State Technical College</h3><p><b>Associate's in Video Game Design</b><br>Aug 2018 – Jun 2020</p></div></div></section>
-<section id="skills"><h2 class="accent">Skills</h2><div class="grid">
-<div class="card"><h3>Languages</h3><p>C++, C#, Java, JavaScript, HTML, CSS, PostgreSQL</p></div>
-<div class="card"><h3>Tools</h3><p>Unreal Engine, Unity, Blender, Visual Studio, Microsoft Office</p></div>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Segoe UI,Arial,sans-serif;background:#0d1117;color:#f8fafc}
+body:before{content:"";position:fixed;inset:0;background:
+radial-gradient(circle at 20% 20%,rgba(0,191,255,.12),transparent 30%),
+radial-gradient(circle at 80% 10%,rgba(139,92,246,.10),transparent 30%);
+z-index:-2}
+nav{position:sticky;top:0;background:rgba(13,17,23,.85);backdrop-filter:blur(10px);display:flex;justify-content:space-between;padding:18px 8%;border-bottom:1px solid #233}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+nav a:hover,.accent{color:#00bfff}
+header{min-height:90vh;display:flex;align-items:center;padding:0 8%;background:linear-gradient(135deg,#101826,#0d1117)}
+.hero h1{font-size:4rem}.hero h2{color:#00bfff;margin:10px 0}.hero p{max-width:720px;color:#b7c0cc;line-height:1.7}
+.btn{display:inline-block;margin:25px 10px 0 0;padding:14px 28px;background:#00bfff;color:#fff;text-decoration:none;border-radius:10px;transition:.3s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 20px rgba(0,191,255,.4)}
+section{padding:80px 8%}h2{font-size:2.3rem;margin-bottom:30px;color:#00bfff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card,.project{background:rgba(22,27,34,.75);backdrop-filter:blur(8px);padding:24px;border:1px solid #2d3748;border-radius:16px;transition:.3s}
+.card:hover,.project:hover{transform:translateY(-8px);border-color:#00bfff}
+.badges{display:flex;flex-wrap:wrap;gap:10px}
+.badge{background:#1d2635;padding:8px 14px;border-radius:999px;border:1px solid #355}
+.project ul{padding-left:20px;margin:15px 0}
+footer{text-align:center;padding:35px;background:#090b10;color:#9aa}
+</style>
+</head>
+<body>
+<nav><strong class="accent">Kevin Gomez</strong><div>
+<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<header><div class="hero">
+<h1>Kevin Gomez</h1>
+<h2>Gameplay Programmer • Technical Designer • Unreal Engine Developer</h2>
+<p>Passionate gameplay programmer focused on AI systems, combat mechanics, animation systems, character development, and technical gameplay design. Experienced in Unreal Engine, Unity, and Blender with a strong interest in building polished gameplay experiences.</p>
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn" href="Resume_Kevin_Gomez.pdf" download>Download Resume</a>
+</div></header>
+
+<section id="about"><h2>About Me</h2><div class="card"><p>I earned a Bachelor's in Game Development from Full Sail University (3.88 GPA) and an Associate's in Video Game Design from Texas State Technical College. I enjoy analyzing great games to understand why they work and applying those lessons to gameplay programming, AI, combat, animation, and player experience.</p></div></section>
+
+<section id="education"><h2>Education</h2><div class="grid">
+<div class="card"><h3>Full Sail University</h3><p>B.S. Game Development<br>2024–2026<br><strong>GPA:</strong> 3.88</p></div>
+<div class="card"><h3>Texas State Technical College</h3><p>A.A.S. Video Game Design<br>2018–2020</p></div>
 </div></section>
-<section id="projects"><h2 class="accent">Projects</h2>
-<div class="project"><h3>Ashen Bloom</h3><p>Gameplay programming, enemy mechanics, boss mechanics, character modeling, rigging, animation, environment assets.</p>
-<p><a class="btn" target="_blank" href="https://shadowswordstudio.itch.io/ashen-bloom">Ashen Bloom itch.io</a></p></div>
-<div class="project"><h3>Robo-Run</h3><p>Gameplay programming, boss mechanics, animations, AI systems. Unity demo released; currently being remade in Unreal Engine.</p>
-<p><a class="btn" target="_blank" href="https://madkilly.itch.io/robo-run">Play Robo-Run</a></p></div>
+
+<section id="skills"><h2>Skills</h2>
+<div class="badges">
+<span class="badge">C++</span><span class="badge">C#</span><span class="badge">Java</span><span class="badge">JavaScript</span><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">PostgreSQL</span><span class="badge">Unreal Engine</span><span class="badge">Unity</span><span class="badge">Blender</span><span class="badge">Git</span><span class="badge">Perforce</span><span class="badge">Visual Studio</span>
+</div></section>
+
+<section id="projects"><h2>Featured Projects</h2>
+<div class="project"><h3>Ashen Bloom</h3><p>Third-person Souls-like action game emphasizing precision combat and transforming weapons.</p><ul><li>Gameplay Programming</li><li>Enemy AI</li><li>Boss Mechanics</li><li>Combat Systems</li><li>Character Modeling, Rigging & Animation</li><li>Environment Assets</li></ul></div>
+<br>
+<div class="project"><h3>Robo-Run</h3><p>Fast-paced multiplayer sports game with basketball mechanics. Originally built in Unity and now being rebuilt in Unreal Engine.</p><ul><li>Gameplay Programming</li><li>AI Systems</li><li>Boss Mechanics</li><li>Animation</li></ul></div>
+<br>
+<div class="project"><h3>Haunted Descent</h3><p>Currently developing intelligent Ghost AI focused on adaptive horror gameplay and unpredictable player encounters.</p></div>
 </section>
-<section id="experience"><h2 class="accent">Experience</h2><div class="grid">
-<div class="card"><h3>Gameplay</h3><p>Combat systems, AI, bosses, UI, player mechanics.</p></div>
-<div class="card"><h3>Technical Art</h3><p>Animations, modeling, rigging in Blender.</p></div>
+
+<section id="experience"><h2>Experience</h2><div class="grid">
+<div class="card"><h3>Gameplay Programming</h3><p>Combat, player controllers, AI, bosses, UI, gameplay systems.</p></div>
+<div class="card"><h3>Technical Development</h3><p>Gameplay architecture, debugging, optimization, animation systems, enemy behaviors.</p></div>
+<div class="card"><h3>Technical Art</h3><p>3D modeling, rigging, animation, Blender asset pipeline.</p></div>
 </div></section>
-<section id="contact"><h2 class="accent">Contact</h2>
-<div class="card"><p>Email: gkevin477@gmail.com</p>
-<p><a class="btn" target="_blank" href="https://www.linkedin.com/in/kevin-gomez-a59639216/">LinkedIn</a></p></div></section>
-<footer>© 2026 Kevin Gomez</footer>
+
+<section><h2>Highlights</h2><div class="grid">
+<div class="card">🎮 Gameplay Systems</div><div class="card">🤖 AI Programming</div><div class="card">⚔ Combat Mechanics</div><div class="card">🎨 Technical Art</div>
+</div></section>
+
+<section id="contact"><h2>Contact</h2><div class="card">
+<p>Email: gkevin477@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/kevin-gomez-a59639216</p>
+<p>Career Goal: Gameplay Programmer at a AAA or indie game studio.</p>
+</div></section>
+
+<footer>© 2026 Kevin Gomez | Gameplay Programmer</footer>
 </body></html>
